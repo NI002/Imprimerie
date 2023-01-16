@@ -16,15 +16,15 @@ public class Client {
     String Email;
     String Adresse;
     String Categorie;
-    String numero;
+    String Num;
 
-    public Client(String Nom, String Prenom, String Email, String Adresse, String Categorie, String numero) {
+    public Client(String Nom, String Prenom, String Email, String Adresse, String Categorie, String Num) {
         this.Nom = Nom;
         this.Prenom = Prenom;
         this.Email = Email;
         this.Adresse = Adresse;
         this.Categorie = Categorie;
-        this.numero = numero;
+        this.Num = Num;
     }
 
     public String getNom() {
@@ -67,12 +67,12 @@ public class Client {
         this.Categorie = Categorie;
     }
 
-    public String getNumero() {
-        return numero;
+    public String getNum() {
+        return Num;
     }
 
-    public void setNumero(String numero) {
-        this.numero = numero;
+    public void setNum(String Num) {
+        this.Num = Num;
     }
     
     
