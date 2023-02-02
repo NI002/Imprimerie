@@ -11,27 +11,12 @@ package model;
  * @author itu
  */
 public class Admin {
-    int id;
     String Email;
     String password;
     
     public Admin(String Email, String password) {
         this.Email = Email;
         this.password = password;
-    }
-
-    public Admin(int id, String Email, String password) {
-        this.id = id;
-        this.Email = Email;
-        this.password = password;
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getEmail() {

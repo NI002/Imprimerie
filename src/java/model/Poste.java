@@ -13,7 +13,6 @@ import java.util.Date;
  * @author itu
  */
 public class Poste {
-    int id;
     Date DateSalaire;
     String Metier;
     double Salaire;
@@ -22,21 +21,6 @@ public class Poste {
         this.DateSalaire = DateSalaire;
         this.Metier = Metier;
         this.Salaire = Salaire;
-    }
-
-    public Poste(int id, Date DateSalaire, String Metier, double Salaire) {
-        this.id = id;
-        this.DateSalaire = DateSalaire;
-        this.Metier = Metier;
-        this.Salaire = Salaire;
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public Date getDateSalaire() {

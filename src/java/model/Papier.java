@@ -13,7 +13,6 @@ import java.awt.Color;
  * @author itu
  */
 public class Papier {
-    int id;
     String TypeDePapier;
     String Format;
     CouleurDEcriture CouleurDelEcriture;
@@ -25,23 +24,6 @@ public class Papier {
         this.CouleurDelEcriture = CouleurDelEcriture;
         this.CouleurDePapier = CouleurDePapier;
     }
-
-    public Papier(int id, String TypeDePapier, String Format, CouleurDEcriture CouleurDelEcriture, CouleurDupapier CouleurDePapier) {
-        this.id = id;
-        this.TypeDePapier = TypeDePapier;
-        this.Format = Format;
-        this.CouleurDelEcriture = CouleurDelEcriture;
-        this.CouleurDePapier = CouleurDePapier;
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-    
 
     public String getTypeDePapier() {
         return TypeDePapier;

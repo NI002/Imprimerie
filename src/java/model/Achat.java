@@ -13,23 +13,11 @@ import java.util.Date;
  * @author itu
  */
 public class Achat {
-    int id;
     Date DateAchat;
     Client client;
     Papier papier;
     Model model;
     double prix;
-
-
-    public Achat(int id, Date DateAchat, Client client, Papier papier, Model model, double prix) {
-        this.id = id;
-        this.DateAchat = DateAchat;
-        this.client = client;
-        this.papier = papier;
-        this.model = model;
-        this.prix = prix;
-    }
-
 
     public Achat(Date DateAchat, Client client, Papier papier, Model model) {
         this.DateAchat = DateAchat;
@@ -37,7 +25,7 @@ public class Achat {
         this.papier = papier;
         this.model = model;
     }
-    
+
     public Date getDateAchat() {
         return DateAchat;
     }

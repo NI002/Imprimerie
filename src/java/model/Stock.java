@@ -10,7 +10,6 @@ package model;
  * @author itu
  */
 public class Stock {
-    int id;
     Materiel materiel;
     double Quantite;
     double Prix;
@@ -18,21 +17,6 @@ public class Stock {
     public Stock(Materiel materiel, double Quantite) {
         this.materiel = materiel;
         this.Quantite = Quantite;
-    }
-
-    public Stock(int id, Materiel materiel, double Quantite, double Prix) {
-        this.id = id;
-        this.materiel = materiel;
-        this.Quantite = Quantite;
-        this.Prix = Prix;
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public Materiel getMateriel() {

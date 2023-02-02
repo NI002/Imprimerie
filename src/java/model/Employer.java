@@ -13,7 +13,6 @@ import java.util.Date;
  * @author itu
  */
 public class Employer {
-    int id;
     String Nom;
     String Prenom;
     String Adresse;
@@ -28,24 +27,6 @@ public class Employer {
         this.Numero = Numero;
         this.DateEmployer = DateEmployer;
         this.Genre = Genre;
-    }
-
-    public Employer(int id, String Nom, String Prenom, String Adresse, String Numero, Date DateEmployer, String Genre) {
-        this.id = id;
-        this.Nom = Nom;
-        this.Prenom = Prenom;
-        this.Adresse = Adresse;
-        this.Numero = Numero;
-        this.DateEmployer = DateEmployer;
-        this.Genre = Genre;
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getNom() {

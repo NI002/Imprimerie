@@ -13,7 +13,6 @@ import java.util.Date;
  * @author itu
  */
 public class Budjet {
-    int id;
     Date DateBudjet;
     double loyer;
     Stock stock;
@@ -29,25 +28,6 @@ public class Budjet {
         this.Benefice = Benefice;
         this.total = total;
     }
-
-    public Budjet(int id, Date DateBudjet, double loyer, Stock stock, Papier papier, double Benefice, double total) {
-        this.id = id;
-        this.DateBudjet = DateBudjet;
-        this.loyer = loyer;
-        this.stock = stock;
-        this.papier = papier;
-        this.Benefice = Benefice;
-        this.total = total;
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
 
     public Date getDateBudjet() {
         return DateBudjet;

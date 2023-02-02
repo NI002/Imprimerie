@@ -11,7 +11,6 @@ package model;
  * @author itu
  */
 public class Format {
-    int id;
     String Format;
     Stock stock;
 
@@ -19,21 +18,6 @@ public class Format {
         this.Format = Format;
         this.stock = stock;
     }
-
-    public Format(int id, String Format, Stock stock) {
-        this.id = id;
-        this.Format = Format;
-        this.stock = stock;
-    }
-
-    public int getId() {
-        return this.id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
 
     public String getFormat() {
         return Format;
