@@ -11,6 +11,7 @@ package model;
  * @author itu
  */
 public class TypeDePapier {
+    int id;
     String TypeDePapier;
     Stock stock;
 
@@ -18,6 +19,21 @@ public class TypeDePapier {
         this.TypeDePapier = TypeDePapier;
         this.stock = stock;
     }
+
+    public TypeDePapier(int id, String TypeDePapier, Stock stock) {
+        this.id = id;
+        this.TypeDePapier = TypeDePapier;
+        this.stock = stock;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
     public String getTypeDePapier() {
         return TypeDePapier;

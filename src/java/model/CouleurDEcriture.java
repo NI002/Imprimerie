@@ -10,12 +10,27 @@ package model;
  * @author itu
  */
 public class CouleurDEcriture {
+    int id;
     String couleur;
     Stock stock;
 
     public CouleurDEcriture(String couleur, Stock stock) {
         this.couleur = couleur;
         this.stock = stock;
+    }
+
+    public CouleurDEcriture(int id, String couleur, Stock stock) {
+        this.id = id;
+        this.couleur = couleur;
+        this.stock = stock;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCouleur() {

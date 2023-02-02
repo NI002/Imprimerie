@@ -11,12 +11,27 @@ package model;
  * @author itu
  */
 public class CouleurDupapier {
+    int id;
     String CouleurDuPapier;
     Stock stock;
 
     public CouleurDupapier(String CouleurDuPapier, Stock stock) {
         this.CouleurDuPapier = CouleurDuPapier;
         this.stock = stock;
+    }
+
+    public CouleurDupapier(int id, String CouleurDuPapier, Stock stock) {
+        this.id = id;
+        this.CouleurDuPapier = CouleurDuPapier;
+        this.stock = stock;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getCouleurDuPapier() {

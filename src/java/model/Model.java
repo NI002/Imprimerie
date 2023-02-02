@@ -11,6 +11,7 @@ package model;
  * @author itu
  */
 public class Model {
+    int id;
     String RectoVerso;
     double prix;
 
@@ -18,6 +19,21 @@ public class Model {
         this.RectoVerso = RectoVerso;
         this.prix = prix;
     }
+
+    public Model(int id, String RectoVerso, double prix) {
+        this.id = id;
+        this.RectoVerso = RectoVerso;
+        this.prix = prix;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
     public String getRectoVerso() {
         return RectoVerso;

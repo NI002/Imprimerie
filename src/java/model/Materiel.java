@@ -11,12 +11,27 @@ package model;
  * @author itu
  */
 public class Materiel {
+    int id;
     String nom;
     double PrixUnitaire;
 
     public Materiel(String nom, double PrixUnitaire) {
         this.nom = nom;
         this.PrixUnitaire = PrixUnitaire;
+    }
+
+    public Materiel(int id, String nom, double PrixUnitaire) {
+        this.id = id;
+        this.nom = nom;
+        this.PrixUnitaire = PrixUnitaire;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNom() {

@@ -11,6 +11,7 @@ package model;
  * @author itu
  */
 public class Client {
+    int id;
     String Nom;
     String Prenom;
     String Email;
@@ -25,6 +26,24 @@ public class Client {
         this.Adresse = Adresse;
         this.Categorie = Categorie;
         this.numero = numero;
+    }
+
+    public Client(int id, String Nom, String Prenom, String Email, String Adresse, String Categorie, String numero) {
+        this.id = id;
+        this.Nom = Nom;
+        this.Prenom = Prenom;
+        this.Email = Email;
+        this.Adresse = Adresse;
+        this.Categorie = Categorie;
+        this.numero = numero;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNom() {

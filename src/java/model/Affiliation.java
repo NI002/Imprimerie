@@ -11,12 +11,27 @@ package model;
  * @author itu
  */
 public class Affiliation {
+    int id;
     Employer employer;
     Poste poste;
 
     public Affiliation(Employer employer, Poste poste) {
         this.employer = employer;
         this.poste = poste;
+    }
+ 
+    public Affiliation(int id, Employer employer, Poste poste) {
+        this.id = id;
+        this.employer = employer;
+        this.poste = poste;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Employer getEmployer() {

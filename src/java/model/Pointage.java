@@ -13,6 +13,7 @@ import java.time.LocalDateTime;
  * @author itu
  */
 public class Pointage {
+    int id;
     Employer employer;
     LocalDateTime DateEntree;
     LocalDateTime DateSortie;
@@ -22,6 +23,22 @@ public class Pointage {
         this.DateEntree = DateEntree;
         this.DateSortie = DateSortie;
     }
+
+    public Pointage(int id, Employer employer, LocalDateTime DateEntree, LocalDateTime DateSortie) {
+        this.id = id;
+        this.employer = employer;
+        this.DateEntree = DateEntree;
+        this.DateSortie = DateSortie;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
     public Employer getEmployer() {
         return employer;
